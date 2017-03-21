@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">The New York Times</string>
+    <string name="search">Search</string>
+    <string name="filter">filter</string>
+    <string name="begin_date">Begin Date</string>
+    <string name="arts">Arts</string>
+    <string name="fashion_style"><![CDATA[Fashion & Style]]></string>
+    <string name="sports">Sports</string>
+    <string name="new_desk">News Desk Values</string>
+    <string name="sort">Sort Order</string>
+    <string name="save">Save</string>
+    <string name="oldest">Oldest</string>
+    <string name="newest">Newest</string>
+    <string name="noInternet">No Internet aviable</string>
+    <string name="noResults">No Results</string>
+</resources>

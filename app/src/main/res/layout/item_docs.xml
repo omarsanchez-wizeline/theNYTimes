@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.wizeline.omarsanchez.nytimessearch.models.Docs" />
+    </data>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/card_item">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_image_black_24dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/docsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{item.headline.main}"
+                android:textColor="@color/secundaryText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/docsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="@{item.leadParagraph}" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>
